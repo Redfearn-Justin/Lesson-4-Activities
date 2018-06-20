@@ -69,7 +69,8 @@
       // 1. Create a for-loop to iterate through the letters array.
         letters.forEach(function(letter) {
           var letterBtn =  $("<button>");
-          letterBtn.addClass(".letter-button .letter .letter-button-color");
+          letterBtn.addClass("letter-button letter letter-button-color");
+          letterBtn.attr("data-letter", letters[i]);
 
         });
 

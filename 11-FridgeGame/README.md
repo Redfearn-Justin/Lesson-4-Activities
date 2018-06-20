@@ -13,3 +13,7 @@
   3. Hitting the clear button erases all of the letters from the fridge.
 
 * **NOTE:** This is a challenging exercise. You may want one person to type, while the other two watch over to catch bugs and/or research necessary snippets.
+
+//5 letterBtn.text(letters[i]);
+
+//6 $("#buttons").append(letterBtn);

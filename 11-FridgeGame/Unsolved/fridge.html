@@ -67,12 +67,17 @@
       // =================================================================================
 
       // 1. Create a for-loop to iterate through the letters array.
+        letters.forEach(function(letter) {
+          var letterBtn =  $("<button>");
+          letterBtn.addClass(".letter-button .letter .letter-button-color");
+
+        });
 
       // Inside the loop...
 
-      // 2. Create a variable named "letterBtn" equal to $("<button>");
+      // 2. Create a variable named "letterBtn" equal to $("<button>"); DONE
 
-      // 3. Then give each "letterBtn" the following classes: "letter-button" "letter" "letter-button-color".
+      // 3. Then give each "letterBtn" the following classes: "letter-button" "letter" "letter-button-color". DONE
 
       // 4. Then give each "letterBtn" an attribute called "data-letter", with a value eqaual to "letters[i]"
 

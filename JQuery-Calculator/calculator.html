@@ -73,15 +73,45 @@
 <script type="text/javascript">
 
 $(document).ready(function() {
+  var firstNumber = 0;
+  var secondNumber = 0;
+  var operator = "";
+  var result = 0;
+  var isOperatorChosen = false;
+  var isCalculated = false;
+
+
 
 // Your code here...
 
 // when a user clicks button, we pull the value from the button id 
 
-$(".btn").onClick();
-  pressed=$(this).attri("value")
-  console.log (pressed)
+function initianlizeCalculator() {
+
+ firstNumber = "";
+ secondNumber = "";
+ operator = "";
+ isOperatorChosen = false;
+ isCalculated = false;
+
+ $("#first-number, #second-number, #operator, #result").empty();
+
+}
+
+
   
+
+
+}
+
+$().on("click", function() {}
+$().on("click", function() {}
+
+ $(".btn").onClick() 
+    pressed=$(this).attri("value")
+    console.log (pressed)
+  
+
 // store button value to a variable
 
 // display button value in results div

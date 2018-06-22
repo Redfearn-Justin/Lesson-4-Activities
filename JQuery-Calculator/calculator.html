@@ -98,14 +98,30 @@ function initianlizeCalculator() {
 
 }
 
+$(".number").on("click", function() {
+  if (isCalculated) {
+    return false;
+  }
+  if (isOperatorChosen) {
+    secondNumber += $(this).val();
+    $("#second-number").text(secondNumber);
+  }
+  else {
+    firstNumber ++ $(this).val();
+    $("#first-number").text(firstNumber);
+  }
+}
+$(".operator").on("click", function() {}
+$(".equal").on("click", function() {}
+$(".clear").on("click", function() {}
+
 
   
+initializeCalculator();
+
+});
 
 
-}
-
-$().on("click", function() {}
-$().on("click", function() {}
 
  $(".btn").onClick() 
     pressed=$(this).attri("value")

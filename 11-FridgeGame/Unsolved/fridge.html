@@ -69,29 +69,29 @@
       // 1. Create a for-loop to iterate through the letters array.
         for (var i = 0; i < letters.length; i ++) {
 
-          var letterBtn =  $("<button>");
+          var letterBtn =  $("<button>");//2
 
-          letterBtn.addClass("letter-button letter letter-button-color");
+          letterBtn.addClass("letter-button letter letter-button-color"); //3
 
-          letterBtn.attr("data-letter", letters[i]);
+          letterBtn.attr("data-letter", letters[i]); //4
 
-          letterBtn.text(letters[i]);
+          letterBtn.text(letters[i]); //5
 
-          $("#buttons").append(letterBtn);
+          $("#buttons").append(letterBtn); //6
 
         }
 
       // Inside the loop...
 
-      // 2. Create a variable named "letterBtn" equal to $("<button>"); DONE
+      // 2. Create a variable named "letterBtn" equal to $("<button>"); DONE!!
 
-      // 3. Then give each "letterBtn" the following classes: "letter-button" "letter" "letter-button-color". DONE
+      // 3. Then give each "letterBtn" the following classes: "letter-button" "letter" "letter-button-color". DONE!!
 
-      // 4. Then give each "letterBtn" an attribute called "data-letter", with a value eqaual to "letters[i]" DONE
+      // 4. Then give each "letterBtn" an attribute called "data-letter", with a value equal to "letters[i]" DONE!!
 
-      // 5. Then give each "letterBtn" a text equal to "letters[i]".
+      // 5. Then give each "letterBtn" a text equal to "letters[i]". DONE!!
 
-      // 6. Finally, append each "letterBtn" to the "#buttons" div (provided).
+      // 6. Finally, append each "letterBtn" to the "#buttons" div (provided). DONE!!
 
       // Be sure to test that your code works for this major task, before proceeding to the next one!
 
@@ -99,14 +99,27 @@
       // =================================================================================
 
       // 7. Create an "on-click" event attached to the ".letter-button" class.
+      $(".letter-button").on("click", function() { //7
+
+      var fridgeMagnet = $("<div>"); //8
+
+      fridgeMagnet.addClass("letter fridge-color"); //9
+
+      fridgeMagnet.text($(this).attr("data-letter")); //10
+
+      }
 
       // Inside the on-click event...
 
-      // 8. Create a variable called "fridgeMagnet" and set the variable equal to a new div.
+      // 8. Create a variable called "fridgeMagnet" and set the variable equal to a new div. DONE!!
 
-      // 9. Give each "fridgeMagnet" the following classes: "letter fridge-color".
+      // 9. Give each "fridgeMagnet" the following classes: "letter fridge-color". DONE!!
 
-      // 10. Then chain the following code onto the "fridgeMagnet" variable: .text($(this).attr("data-letter"))
+      // 10. Then chain the following code onto the "fridgeMagnet" variable: .text($(this).attr("data-letter")) DONE!!
+
+      //--- attr acts as both a setter and a getter for attributes depending on whether we supply one argument or two
+      
+      //--- NOTE: There IS a $(data) jQuery method, but it doesn't do what you'd expect. So just use attr.
 
       // 11. Lastly append the fridgeMagnet variable to the "#display" div (provided);
 
